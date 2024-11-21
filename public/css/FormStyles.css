@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgb(228, 228, 228);
+  }
+  
+  .accordion{
+    width: 92%;
+    max-width: 2000px;
+    margin: 50px;
+  }
+  
+  .accordion-item{
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+    border: 1px solid rgb(124, 124, 124);
+  }
+   .accordion-item-header{
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+   }
+   .accordion-item-header::after{
+    content:"\2295";
+    position: absolute;
+    right: 1rem;
+  
+   }
+   .accordion-item-header.active::after{
+    content: "\229D";
+  
+   }
+   .accordion-item-body{ 
+    max-height: 0;
+    overflow: hidden;
+    transform: max-hight 0.2s ease-out;
+   }
+  
+   .accordion-item-body-content{
+    padding: 1rem;
+    line-height: 1.5 rem;
+    border-top: 1px solid rgb(124, 124, 124);
+   }
+  
+   .container1{
+    display: grid;
+    grid-template-columns: 400px  400px 400px 400px;
+    grid-template-rows: 30px 30px 30px;
+    column-gap: 25px;
+    row-gap: 10px;
+   }
+  /*
+   #age{
+    width: 50px;
+   }
+  */
+   .save-button{
+    border: none;
+    background-color: rgb(0, 119, 255);
+    padding: 3px 6px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+  
+   }
+   .save-button:hover{
+    background-color: #fff;
+    color: rgb(0, 119, 255);
+   }
+  
+   .container2{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 30px);
+    column-gap: 25px;
+    row-gap: 10px;
+   }
+  
+   .one{
+    grid-column: 1;
+    grid-row: 1;
+   }
+   .two{
+    grid-column: 1;
+    grid-row: 2;
+   }
+   .three{
+    grid-column: 2;
+    grid-row: 1;
+   }
+   .four{
+    grid-column: 2;
+    grid-row: 2;
+   }
+   .five{
+    grid-column: 3;
+    grid-row: 1;
+   }
+   .six{
+    grid-column: 3;
+    grid-row: 2;
+   }
+  
+  .container3{
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: repeat(2,30px);
+    column-gap: 25px;
+    row-gap: 10px;
+   }
+   .container4{
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: repeat(2,30px);
+    column-gap: 25px;
+    row-gap: 10px;
+   }
+   .second-one{
+    grid-column: 1;
+    grid-row: 1;
+   }
+   .second-two{
+    grid-column: 1;
+    grid-row: 2;
+   }
+   .second-three{
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .second-four{
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .second-five{
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .second-six{
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .container4{
+    display: grid;
+    grid-template-columns: 400px  400px 400px 400px;
+    grid-template-rows: 30px 30px;
+    column-gap: 25px;
+    row-gap: 10px;
+   }
+  
+   #status-btn{
+    background-color: rgb(5, 186, 199);
+    border-radius: 5px;
+    color: white;
+   }
+   .container5{
+    display: grid;
+    grid-template-columns: repeat(18, 90px);
+    grid-template-rows: repeat(2,30px);
+    grid-gap: 1rem 1rem;
+   }
+   #item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+   }
+   #item2{
+    grid-column-start: 5;
+    grid-column-end: 8;
+   }
+   #item3{
+    grid-column-start: 9;
+    grid-column-end: 9;
+   }
+   #item4{
+    grid-column-start: 10;
+    grid-column-end: 11;
+   }
+   #item5{
+    grid-column-start: 12;
+    grid-column-end: 14;
+   }
+   #item6{
+    grid-column-start: 15;
+    grid-column-end: 18;
+   }
+   #item7{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2;
+   }
+   #item8{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row: 2;
+   }
+   #item9{
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row: 2;
+   }
+   #item10{
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row: 2;
+    background-color: rgb(172, 172, 172);
+   }
+   #item11{
+    grid-column-start: 12;
+    grid-column-end: 14;
+    grid-row: 2;
+   }
+   #item12{
+    grid-column-start: 15;
+    grid-column-end: 17;
+    grid-row: 2;
+   }
+   @media(max-width:767px){
+    html{
+      font-size:14px;
+    }
+   }
